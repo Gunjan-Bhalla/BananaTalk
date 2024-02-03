@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+:root
+{
+    --primary-color: yellow;
+    --secondary-color: #051923;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans',
+    sans-serif;
+}
+
+
+#txt-input 
+{
+    width: 50%;
+    height: 20vh;
+    /* margin: 1rem; */
+    padding: 1rem;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: block;
+    margin: 10px;
+
+}
+
+#output 
+{
+    border: 5px solid black;
+    height: 20vh;
+    color: yellow;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+}
+
+#btn{
+    padding: 7px 0;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    margin:0.5rem;
+    width: 200px;
+    height:auto;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: 0.3s ease;
+    border: yellow;
+    cursor:pointer;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: yellow;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover{
+    color: black;
+    background-color: yellow;
+}
+
+nav{
+    height:13vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    flex-shrink: initial;
+}
+
+nav .main-heading{
+    text-align: center;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:2.5rem;
+}
+
+.text{
+    color:var(--secondary-color);
+    margin:1rem;
+    font-size: larger;
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: block;
+    margin: 10px;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-weight: 600;
+    background-color: lightgoldenrodyellow;
+    color:black;
+    padding: 0.5rem;
+    margin-top:3rem;
+    text-align: center;
+}
+
+footer p{
+    max-width:600px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    margin:auto;
+    font-size: medium; 
+    padding: 0.2rem;
+}
